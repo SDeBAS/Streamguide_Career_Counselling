@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: LeagueGothic;
+  src: url(../font/league_gothic-webfont.woff);
+}
+
+body{
+  min-height: 100vh;
+  background: url(./Group\ 26contactus.png);
+}
+.navigation {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  width: 70px;
+  border-radius: 10px;
+  box-sizing: initial;
+  border-left: 5px solid #5D001D;
+  background: #5D001D;
+  transition: width 0.5s;
+  overflow-x: hidden;
+}
+.navigation.active{
+  width: 300px;
+}
+.navigation ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.navigation ul li.active {
+  background: #E3E2DE;
+}
+
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #E3E2DE;
+}
+.navigation ul li.active a{
+  color: #5D001D;
+}
+.navigation ul li a .icon{
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+.navigation ul li a .icon ion-icon{
+  font-size: 1.2em;
+}
+.navigation ul li a .title{
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: normal;
+}
+.toggle{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: #5D001D;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle.active{
+  background: #5D001D;
+}
+.toggle ion-icon{
+  position: absolute;
+  color: #E3E2DE;
+  font-size: 34px;
+  display:none;
+}
+.toggle ion-icon.open,
+.toggle.active ion-icon.close{
+  display:block;
+}
+.toggle ion-icon.close,
+.toggle.active ion-icon.open{
+  display:none;
+}
+
+
+
+
+
+
+.pages .contact .heading {
+  text-align: center;
+  margin-left: 15rem;
+  margin-right: 11rem;
+  margin-top: 0.5rem;
+  }
+
+.pages .contact .heading h1{
+  color: #5D001D;
+  font-size: 90px;
+  font-family: LeagueGothic;
+  font-weight: 400;
+}
+
+.pages .contact .paragraph {
+  text-align: center;
+  margin-left: 10rem;
+  margin-right: 8rem;
+  margin-top: 0.1rem;
+  }
+
+.pages .contact .paragraph p{
+  color: #9B1750;
+  font-size: 20px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: italic ;
+}
+
+.pages .contact .icons{
+  display: flex;
+  margin-left: 14rem;
+  margin-top: 1rem;
+}
+
+.pages .contact .icons .icon1{
+  margin-left: 2rem;
+  margin-right: 7rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pages .contact .icons .icon1 :hover{
+  background-color: #FFFFFF;
+  cursor: pointer;
+  
+  
+}
+
+.pages .contact .icons .icon2{
+  margin-left: 2.5rem;
+  margin-right: 5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pages .contact .icons .icon2 :hover{
+  background-color: #FFFFFF;
+  cursor: pointer;
+  
+}
+
+.pages .contact .icons .icon3{
+  margin-left: 2rem;
+  margin-right: 5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.pages .contact .icons .icon3 :hover{
+  background-color: #FFFFFF;
+  cursor: pointer;
+  
+}
+
+.pages .contact .container{
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  padding-left: 40px;
+  padding-top: 20px;
+  margin-left: 12rem;
+  margin-right: 5.5rem;
+  
+}
+
+.row{
+display: grid;
+grid-template-columns: auto auto;
+}
+
+input[type=text], textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 40px;
+  resize: vertical;
+}
+
+input[type=email]{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 3px;
+  margin-bottom: 40px;
+  resize: vertical;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  resize: vertical;
+}
+
+.column1{
+  margin-left: 5rem;
+}
+
+textarea{
+  width: 80%;
+}
+
+.pages .contact .button {
+  text-align: center;
+  margin-left: 32rem;
+  margin-right: 8rem;
+  margin-top: 2rem;
+  margin-bottom: 30px;
+  background-color: #5D001D;
+  border-radius: 30px;
+  width: 12%;
+  box-shadow: #5D001D;
+  }
+
+  .pages .contact a{
+    text-decoration: none;
+  } 
+
+.pages .contact .button p{
+  color: #FFFFFF;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  
+}
+
+.pages .contact .button :hover{
+  cursor: pointer;
+}
